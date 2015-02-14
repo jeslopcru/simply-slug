@@ -1,0 +1,25 @@
+{
+  "name": "jeslopcru/simplySlug",
+  "description": "Simple implementation for convert a string into a slug",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jesús López ",
+      "email": "jeslopcru[at]gmail[dot]com",
+      "hompage": "http://jesuslc.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0"
+  },
+  "autoload": {
+    "psr-4": { "": "src/" }
+  },
+  "config": {
+    "bin-dir": "bin"
+  }
+}
