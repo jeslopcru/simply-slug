@@ -5,7 +5,7 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Jesús López ",
+      "name": "Jesús López",
       "homepage": "http://jesuslc.com"
     }
   ],
@@ -17,6 +17,6 @@
     "fabpot/php-cs-fixer": "~2.0@dev"
   },
   "autoload": {
-    "psr-4": { "": "src/" }
+    "psr-4": {"jeslopcru\\SimplySlug\\": "src/"}
   }
 }
