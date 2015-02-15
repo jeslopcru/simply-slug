@@ -29,6 +29,7 @@ class SimplySlugTest extends \PHPUnit_Framework_TestCase
         return [
             ['World', 'world'],
             ['Hello World', 'hello-world'],
+            ['  more  trim  than    needed  ', 'more-trim-than-needed']
         ];
     }
 
