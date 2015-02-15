@@ -31,4 +31,11 @@ class SimplySlugTest extends \PHPUnit_Framework_TestCase
             ['Hello World', 'hello-world'],
         ];
     }
+
+    public function testWikipediaStyleSlug()
+    {
+        $slug = $this->simplySlug->drools('Wikipedia Style', '_');
+
+        $this->assertEquals('wikipedia_style', $slug);
+    }
 }
