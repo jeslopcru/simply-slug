@@ -13,13 +13,22 @@ class SimplySlugTest extends \PHPUnit_Framework_TestCase
     {
         $this->simplySlug = new SimplySlug();
     }
-    public function testCreateASlugFromString()
+
+    /**
+     * @dataProvider supportedStrings
+     */
+    public function testCreateASlugFromString($text, $expectedSlug)
     {
-        $this->assertEquals('world', $this->simplySlug->drools('World'));
+        $slug = $this->simplySlug->drools($text);
+
+        $this->assertEquals($expectedSlug, $slug);
     }
 
-    public function testCreateASlugFromTwoString()
+    public function supportedStrings()
     {
-        $this->assertEquals('hello-world', $this->simplySlug->drools('Hello World'));
+        return [
+            ['World', 'world'],
+            ['Hello World', 'hello-world'],
+        ];
     }
 }
