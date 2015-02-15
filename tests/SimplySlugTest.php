@@ -32,6 +32,7 @@ class SimplySlugTest extends \PHPUnit_Framework_TestCase
             ['  more  trim  than    needed  ', 'more-trim-than-needed'],
             ['murciélago: lleva Acento', 'murcielago-lleva-acento'],
             ['J\'étudie le français', 'j-etudie-le-francais'],
+            ['JúST å fëw wørds', 'just-a-few-words'],
         ];
     }
 
