@@ -1,11 +1,14 @@
 <?php
 
-namespace SimplySlug\Tests;
+namespace jeslopcru\SimplySlug\tests;
+
+use jeslopcru\SimplySlug\SimplySlug;
 
 class SimplySlugTest extends \PHPUnit_Framework_TestCase
 {
-    public function testNothing()
+    public function testCreateASlugFromString()
     {
-        $this->assertTrue(true);
+        $simplySlug = new SimplySlug();
+        $this->assertEquals('world', $simplySlug->drools('World'));
     }
 }
