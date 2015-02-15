@@ -11,4 +11,10 @@ class SimplySlugTest extends \PHPUnit_Framework_TestCase
         $simplySlug = new SimplySlug();
         $this->assertEquals('world', $simplySlug->drools('World'));
     }
+
+    public function testCreateASlugFromTwoString()
+    {
+        $simplySlug = new SimplySlug();
+        $this->assertEquals('hello-world', $simplySlug->drools('Hello World'));
+    }
 }
