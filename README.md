@@ -24,7 +24,7 @@ composer require jeslopcru/simply-slug
 ```
 <?php
 
-$simplySlug =  new SimplySlug();
+$simplySlug =  new \SimplySlug();
 
 echo $simplySlug->drools('JúST å fëw wørds'); // just-a-few-words
 
