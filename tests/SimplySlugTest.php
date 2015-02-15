@@ -6,15 +6,20 @@ use jeslopcru\SimplySlug\SimplySlug;
 
 class SimplySlugTest extends \PHPUnit_Framework_TestCase
 {
+    /** @var  SimplySlug */
+    protected $simplySlug;
+
+    public function setUp()
+    {
+        $this->simplySlug = new SimplySlug();
+    }
     public function testCreateASlugFromString()
     {
-        $simplySlug = new SimplySlug();
-        $this->assertEquals('world', $simplySlug->drools('World'));
+        $this->assertEquals('world', $this->simplySlug->drools('World'));
     }
 
     public function testCreateASlugFromTwoString()
     {
-        $simplySlug = new SimplySlug();
-        $this->assertEquals('hello-world', $simplySlug->drools('Hello World'));
+        $this->assertEquals('hello-world', $this->simplySlug->drools('Hello World'));
     }
 }
