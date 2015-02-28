@@ -18,5 +18,15 @@
   },
   "autoload": {
     "psr-4": {"jeslopcru\\SimplySlug\\": "src/"}
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "jeslopcru\\SimplySlug\\Test\\": "tests"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
   }
 }
