@@ -1,11 +1,17 @@
 language: php
 php:
-  - 5.3
   - 5.4
   - 5.5
   - 5.6
   - hhvm
 
-before_script: composer install
+before_script:
+  - printf "\n" | pecl install yaml-beta
+  - echo "extension=yaml.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+  - composer install
 
-script: phpunit --configuration phpunit.xml.dist --coverage-text
+script:
+  - phpunit --configuration phpunit.xml.dist --coverage-text
+
+notifications:
+  email: false
