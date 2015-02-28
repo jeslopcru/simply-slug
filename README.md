@@ -1,4 +1,5 @@
-# SimplySlug
+# SimplySlug 
+[![Build Status](https://travis-ci.org/jeslopcru/simply-slug.svg?branch=master)](https://travis-ci.org/jeslopcru/simply-slug)
 
 SimplySlug is a Simple implementation for creating [slug](http://en.wikipedia.org/wiki/Semantic_URL#Slug) based on [keyvanakbary/slugifier](https://github.com/keyvanakbary/slugifier).
 
