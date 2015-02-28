@@ -10,7 +10,7 @@ class SimplySlug
 
     public function __construct()
     {
-        $this->charMap = yaml_parse(file_get_contents(__DIR__ . '/charMap.yml'));
+        $this->charMap = yaml_parse(file_get_contents(__DIR__ . '/charmap.yml'));
     }
 
     public function drools($text, $separator = '-')
