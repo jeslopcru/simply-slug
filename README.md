@@ -12,7 +12,7 @@ To install this package, run the command below and you will get the latest versi
 composer require jeslopcru/simply-slug
 ```
 
-#Usage
+# Usage
 
 ```
 <?php
