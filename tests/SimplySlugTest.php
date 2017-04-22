@@ -42,4 +42,5 @@ class SimplySlugTest extends \PHPUnit_Framework_TestCase
 
         $this->assertEquals('wikipedia_style', $slug);
     }
+
 }

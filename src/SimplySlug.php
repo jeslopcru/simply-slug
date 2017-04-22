@@ -2,6 +2,8 @@
 
 namespace jeslopcru\SimplySlug;
 
+use Symfony\Component\Yaml\Yaml;
+
 class SimplySlug
 {
     const UNWANTED_CHARS = '/([^a-z0-9]|-)+/';
@@ -10,7 +12,7 @@ class SimplySlug
 
     public function __construct()
     {
-        $this->charMap = yaml_parse(file_get_contents(__DIR__ . '/charmap.yml'));
+        $this->charMap = Yaml::parse(file_get_contents(__DIR__ . '/charmap.yml'));
     }
 
     public function drools($text, $separator = '-')
